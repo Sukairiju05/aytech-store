@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PinTech - Group Buy Electronics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header class="top-nav">
+            <div class="logo">PinTech</div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search phones, laptops...">
+            </div>
+        </header>
+
+        <main id="app-content">
+            </main>
+
+        <nav class="bottom-nav">
+            <button class="nav-item active" onclick="navigate('home')">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </button>
+            <button class="nav-item" onclick="navigate('categories')">
+                <i class="fas fa-th-large"></i>
+                <span>Categories</span>
+            </button>
+            <button class="nav-item cart-btn" onclick="navigate('cart')">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge" id="cart-badge">0</span>
+                <span>Cart</span>
+            </button>
+            <button class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
